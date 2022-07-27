@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" >
+    {% if user %}
+    <li>
+        <span>欢迎你</span>{{user.username}}
+        <a href="{{url_for('user.logout')}}">退出登录</a>
+    </li>
+    <a href="http://127.0.0.1:8001/user/drop">删除用户</a>
+    <a href="{{url_for('user.update')}}">修改密码</a>
+    {% else %}
+    <h1>请登录，无账号请先注册</h1>
+    <a href="http://127.0.0.1:8001/user/login">登录</a>
+    <a href="http://127.0.0.1:8001/user/register">注册</a>
+
+    {% endif %}
+   
+
+</form>
+
+</body>
+</html>

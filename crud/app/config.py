@@ -1,0 +1,15 @@
+
+from sqlalchemy import JSON
+
+JSON_AS_ASCII = False
+
+HOST = '127.0.0.1'
+PORT = '3306'
+DATABASE ='project'
+USERNAME = 'root'
+PASSWORD = '123456'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost:3306/project'
+SQLALCHEMY_COMMIT_ON_TEARDOWN =True
+SECRET_KEY = "322341242JK"
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
